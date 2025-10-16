@@ -1,6 +1,4 @@
 import struct, datetime
-
-import struct, datetime
 # from pymodbus.client.sync import ModbusTcpClient
 from pymodbus.client import ModbusTcpClient
 # from pyModbusTCP.client import ModbusClient
