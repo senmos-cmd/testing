@@ -218,17 +218,3 @@ class Modbus:
             if (char_2nd != '\x00'):
                 list_out += char_2nd
         return list_out  
-
-
-if __name__ == "__main__":
-    sensor = 'kaj'
-    mdb_obj = Modbus(sensor)
-    os=mdb_obj.get_sensor_OS()
-    print(os)
-    sn=mdb_obj.get_SN()
-    print(sn)
-    rev=mdb_obj.get_sensor_Rev()
-    print(rev)
-    data = mdb_obj.get_analyzer_data()
-    print(data)
-    mdb_obj.close()
